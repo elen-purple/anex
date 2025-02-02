@@ -2,22 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Anex</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <load ="partials/components/header.html" />
+    <main class="main">
+      <load ="partials/index/hero.html" />
+      <load ="partials/index/tours.html" />
+      <load ="partials/index/hotels.html" />
+      <load ="partials/index/choose.html" />
+      <load ="partials/index/reviews.html" />
+      <load ="partials/index/news.html" />
+      <load ="partials/index/about.html" />
+      <load ="partials/index/contact.html" />
+      <load ="partials/index/journey.html" />
     </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <load ="partials/components/footer.html" />
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    cursor: url(../svg/cursor.svg) 12 9, default;
+}
+
+*::selection {
+    background-color: $violet-accent;
+    color: $light-text;
+}

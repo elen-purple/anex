@@ -16,6 +16,7 @@ img {
 
 a {
     text-decoration-line: none;
+    cursor: url(../svg/cursor.svg) 12 9, default;
 }
 
 ul {
@@ -23,7 +24,7 @@ ul {
 }
 
 button {
-    cursor: pointer;
+    cursor: url(../svg/cursor.svg) 12 9, default;
     display: block;
     border: none;
 }

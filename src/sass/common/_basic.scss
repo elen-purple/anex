@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    transition: all 0.3s ease-in-out;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     cursor: url(../svg/cursor.svg) 12 9, default;

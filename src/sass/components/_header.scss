@@ -1,0 +1,138 @@
+.header {
+    padding: 12px 0;
+
+    @media screen and (min-width: 1024px) {
+        padding: 13.5px 0;
+    }
+
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: 1024px) {
+            justify-content: start;
+        }
+    }
+
+    &__logo {
+        display: block;
+        line-height: 0;
+
+        @media screen and (min-width: 1024px) {
+            margin-right: 86px;
+        }
+    }
+
+    &__svg {
+        width: 121px;
+        height: 44px;
+
+        @media screen and (min-width: 1024px) {
+            width: 159px;
+            height: 58px;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: block;
+            margin-right: auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 42px;
+    }
+
+    &__item {
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1216px) {
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                display: block;
+            }
+        }
+    }
+
+    &__link {
+        color: $dark-text;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: block;
+            color: $dark-text;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 11.5px 16.5px;
+            border-radius: 30px;
+            border: 1px solid $light-title;
+            background-color: transparent;
+            margin-right: 30px;
+        }
+    }
+
+    &__tools {
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            margin-right: 25px;
+        }
+    }
+
+    &__tool {
+        line-height: 0;
+    }
+
+    &__run {}
+
+    &__media {
+        fill: none;
+        stroke: $dark-text;
+    }
+
+    &__line {
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: block;
+            width: 1px;
+            height: 38px;
+            background: $line-color;
+            margin-right: 24px;
+        }
+    }
+
+    &__menu {
+        background-color: transparent;
+        line-height: 0;
+    }
+
+    &__burger {
+        stroke: $dark-text;
+
+        @media screen and (min-width: 1024px) {
+            width: 42px;
+            height: 17px;
+        }
+    }
+}

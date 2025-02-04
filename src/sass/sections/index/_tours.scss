@@ -1,0 +1,341 @@
+.tours {
+    padding: 80px 0;
+    overflow: hidden;
+
+    @media screen and (min-width: 1024px) {
+        padding: 91px 0 100px;
+    }
+
+    @media screen and (min-width: 1216px) {
+        padding: 134px 0 140px;
+    }
+
+    & .container {
+        position: relative;
+    }
+
+    &__title {
+        color: $dark-text;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 6px;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 44px;
+            text-align: left;
+            margin-bottom: 4px;
+        }
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__subtitle {
+        color: $line-color;
+        font-family: "Millanova";
+        font-size: 36px;
+        font-weight: 400;
+        position: absolute;
+        top: 2px;
+        height: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 52px;
+            top: 67px;
+            left: 427px;
+            transform: translate(0, 0);
+        }
+
+        @media screen and (min-width: 1216px) {
+            top: 135px;
+            left: -73px;
+        }
+    }
+
+    &__info {
+        color: $dark-text;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            text-align: left;
+            margin-bottom: 62px;
+        }
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__slider {
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__slides {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        @media screen and (min-width: 1024px) {
+            gap: 32px;
+        }
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__slide {
+        min-width: 248px;
+        height: 340px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 30px;
+
+        &:nth-child(1) {
+            background-image: $card-overlay, url(../img/mobile/index/tours/tours-1@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../img/mobile/index/tours/tours-1@1x-mobile.webp);
+            }
+        }
+
+        &:nth-child(2) {
+            background-image: $card-overlay, url(../img/mobile/index/tours/tours-2@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../img/mobile/index/tours/tours-2@1x-mobile.webp);
+            }
+        }
+
+        &:nth-child(3) {
+            background-image: $card-overlay, url(../img/mobile/index/tours/tours-3@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../img/mobile/index/tours/tours-3@1x-mobile.webp);
+            }
+        }
+
+        &:nth-child(4) {
+            background-image: $card-overlay, url(../img/mobile/index/tours/tours-4@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../img/mobile/index/tours/tours-4@1x-mobile.webp);
+            }
+        }
+
+        &:nth-child(5) {
+            background-image: $card-overlay, url(../img/mobile/index/tours/tours-5@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../img/mobile/index/tours/tours-5@1x-mobile.webp);
+            }
+        }
+
+        &:nth-child(6) {
+            background-image: $card-overlay, url(../img/mobile/index/tours/tours-6@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../img/mobile/index/tours/tours-6@1x-mobile.webp);
+            }
+        }
+
+
+        @media screen and (min-width: 1024px) {
+            min-width: 256px;
+
+            &:nth-child(1) {
+                background-image: $card-overlay, url(../img/tablet/index/tours/tours-1@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../img/tablet/index/tours/tours-1@1x-tablet.webp);
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: $card-overlay, url(../img/tablet/index/tours/tours-2@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../img/tablet/index/tours/tours-2@1x-tablet.webp);
+                }
+            }
+
+            &:nth-child(3) {
+                background-image: $card-overlay, url(../img/tablet/index/tours/tours-3@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../img/tablet/index/tours/tours-3@1x-tablet.webp);
+                }
+            }
+
+            &:nth-child(4) {
+                background-image: $card-overlay, url(../img/tablet/index/tours/tours-4@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../img/tablet/index/tours/tours-4@1x-tablet.webp);
+                }
+            }
+
+            &:nth-child(5) {
+                background-image: $card-overlay, url(../img/tablet/index/tours/tours-5@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../img/tablet/index/tours/tours-5@1x-tablet.webp);
+                }
+            }
+
+            &:nth-child(6) {
+                background-image: $card-overlay, url(../img/tablet/index/tours/tours-6@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../img/tablet/index/tours/tours-6@1x-tablet.webp);
+                }
+            }
+        }
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__details {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__detail {
+        color: $light-text;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 2.5px 10px;
+        border-radius: 30px;
+        border: 1px solid $light-text;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__block {
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__header {
+        color: $light-text;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__date {
+        color: $light-text;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 6px;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__link {
+        color: $light-text;
+        font-size: 14px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__icon {
+        fill: none;
+        stroke: $light-text;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__pagination {
+        width: 100%;
+        height: 1px;
+        background-color: $line-color;
+        margin-top: 41px;
+        position: relative;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+
+    &__checked {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 92px;
+        height: 2px;
+        background-color: $dark-text;
+
+        @media screen and (min-width: 1024px) {}
+
+        @media screen and (min-width: 1216px) {}
+    }
+}

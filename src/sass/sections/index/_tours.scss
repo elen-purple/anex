@@ -74,12 +74,51 @@
     }
 
     &__slider {
+        position: relative;
+
         @media screen and (min-width: 1024px) {}
 
         @media screen and (min-width: 1216px) {}
     }
 
+    &__btn {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-text;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        box-shadow: 0px 4px 20px rgba(43, 43, 51, 0.20);
+
+        &:hover{
+            background-color: $accent-bg;
+        }
+
+        &--prev {
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        &--next {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+
+    &__arrow {
+        fill: $dark-text;
+    }
+
+    &__btn--next &__arrow {
+        transform: rotate(180deg);
+    }
+
     &__slides {
+        width: max-content;
         display: flex;
         gap: 12px;
         align-items: center;

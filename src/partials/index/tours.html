@@ -4,7 +4,12 @@
     <h3 class="tours__subtitle">tours</h3>
     <p class="tours__info">Поймайте момент</p>
     <div class="tours__slider">
-      <ul class="tours__slides">
+      <button id="prev-btn" class="tours__btn tours__btn--prev">
+        <svg class="tours__arrow" width="6" height="11">
+          <use href="./svg/icons.svg#arrow-slider"></use>
+        </svg>
+      </button>
+      <ul id="tours-slides" class="tours__slides">
         <li class="tours__slide">
           <ul class="tours__details">
             <li class="tours__detail">9 дней</li>
@@ -106,8 +111,13 @@
           </div>
         </li>
       </ul>
-      <div class="tours__pagination">
-        <div class="tours__checked"></div>
+      <button id="next-btn" class="tours__btn tours__btn--next">
+        <svg class="tours__arrow" width="6" height="11">
+          <use href="./svg/icons.svg#arrow-slider"></use>
+        </svg>
+      </button>
+      <div id="pagination" class="tours__pagination">
+        <div id="checked" class="tours__checked"></div>
       </div>
     </div>
   </div>
